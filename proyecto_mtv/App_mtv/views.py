@@ -1,22 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from App_mtv.models import *
+from App_mtv.models import Familia
 from django.template import loader
-
-def hermanos(request):
-    hermano1 = Familia(nombre = "Christopher", edad = 26)
-    hermano1.save()
-    hermano2 = Familia(nombre = "Christian", edad = 26)
-    hermano2.save()
-    mensaje = f"Mis dos hermanos gemelos se llaman {hermano2.nombre} y {hermano1.nombre} y tienen {hermano1.edad} años"
-    return HttpResponse(mensaje)
-
-def hermana(request):
-    hermana = Familia(nombre = "Janis", edad = 32)
-    hermana.save()
-    mensaje = f"Mi hermana se llama {hermana.nombre} y tiene {hermana.edad} años"
-    return HttpResponse(mensaje)
-    
 
 def familia(self):
     familia1 = Familia(nombre = "Christian", edad = 26, fecha_nac = "1996-1-12")
