@@ -14,9 +14,9 @@ def familia(self):
     familia3.save()
 
     diccionario = {
-        "name1": familia1.nombre, "age1": familia1.edad, "birth1": familia1.fecha_nac,
-        "name2": familia2.nombre, "age2": familia2.edad, "birth2": familia2.fecha_nac,
-        "name3": familia3.nombre, "age3": familia3.edad, "birth3": familia3.fecha_nac
+        "nome1": familia1.nombre, "edade1": familia1.edad, "nacimento": familia1.fecha_nac,
+        "nome2": familia2.nombre, "edade2": familia2.edad, "nacimento": familia2.fecha_nac,
+        "nome3": familia3.nombre, "edade3": familia3.edad, "nacimento": familia3.fecha_nac
         }
     
     plantilla = loader.get_template("familiar.html")
