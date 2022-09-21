@@ -55,7 +55,7 @@ ROOT_URLCONF = 'proyecto_mtv.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["D:/CoderPy/proyecto_mtv/proyecto_mtv/plantillas/"],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

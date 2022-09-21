@@ -14,10 +14,13 @@ def familia(self):
     familia3.save()
 
     diccionario = {
-        "nome1": familia1.nombre, "edade1": familia1.edad, "nacimento": familia1.fecha_nac,
-        "nome2": familia2.nombre, "edade2": familia2.edad, "nacimento": familia2.fecha_nac,
-        "nome3": familia3.nombre, "edade3": familia3.edad, "nacimento": familia3.fecha_nac
+        "nome1": familia1.nombre, "edade1": familia1.edad, "nacimento1": familia1.fecha_nac,
+        "nome2": familia2.nombre, "edade2": familia2.edad, "nacimento2": familia2.fecha_nac,
+        "nome3": familia3.nombre, "edade3": familia3.edad, "nacimento3": familia3.fecha_nac
         }
+    
+    mensaje = Familia.objects.all()
+    print(mensaje)
     
     plantilla = loader.get_template("familiar.html")
     document = plantilla.render(diccionario)
